@@ -6,6 +6,8 @@ import os
 import time
 import base64
 from config import DEVICES, Spotify, Refresh_Rate, Debug
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 app = Flask(__name__)
 CORS(app)
